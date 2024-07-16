@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 103vh;
+    /* font-family: "VT323", monospace; */
+    /* font-family: "Architects Daughter", cursive; */
+    font-family: "Madimi One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+body, 
+.snake{
+    background-color: #1f6eed;
+}
+#game-board{
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows:repeat(20, 20px);
+    margin:5px;
+    
+}
+.game-border-1{
+    border:#1d8939 solid 10px;
+    border-radius: 40px;
+    box-shadow: inset 0 0 0 10px, #0c3c19;
+}
+
+.game-border-2{
+    border:hsl(49, 100%, 50%) solid 8px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px, #837205;
+}
+
+.game-border-3{
+    border:#de0303 solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 10px, #930a0a;
+}
+#instruction-text{
+    position: absolute;
+    top: 60%;
+    color: rgb(255, 255, 255) ;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin:0px;
+    text-shadow: -3px -3px 0 #1d8939,  
+    3px -3px 0 #1d8939,
+   -3px  3px 0 #1d8939,
+   3px  3px 0 #1d8939;
+
+}
+#instruction-text2{
+    position: absolute;
+    top: 62%;
+    color: rgb(255, 255, 255) ;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0px;
+    display: none;
+    text-shadow: -3px -3px 0 #1d8939,  
+    3px -3px 0 #1d8939,
+   -3px  3px 0 #1d8939,
+   3px  3px 0 #1d8939;
+}
+/* #instruction-text3{
+    position: absolute;
+    top:62%;
+    color:rgb(255, 255, 255) ;
+    width:300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin:0px;
+    display: none;
+} */
+
+.scores{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    position: absolute;
+}
+#score{
+    color:#ffffff;
+}
+
+#score,
+#highScore{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px, 0px;
+}
+
+#highScore{
+    color: #ffffff;
+    display: none;
+}
+
+#logo,
+.game-border-3{
+    background-color: #ffcf00;
+}
+.snake{
+    border: #1f6eee 7px dotted;
+    background-color: #0be2e6;
+}
+
+.food{
+    /* background-color:#eaa5da;
+    border:rgb(255, 225, 246) 5px solid; */
+    
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+ .food2{
+    /* background-color:#fbb1ca;
+    border:rgb(89, 0, 37) 5px solid; */
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 1;
+    grid-row: span 1;
+} 
+/* #wall {
+    grid-column: 10;
+    grid-row: 10; 
+    background-color: #333; 
+    width: 200px;
+    height: 200px; 
+} */
+
+/* .wall {
+    background-color: #930a0a;
+    border: #930a0a solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 10px #b78aa9;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px); 
+    left: calc(50% - 50px);
+} */
